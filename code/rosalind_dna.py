@@ -14,6 +14,6 @@ def count_nt(dna):
 
 if __name__ == '__main__':
   with open('rosalind_dna.txt', 'r') as s:
-    dna = s.readline().strip()
+    dna = s.read()
     count_A, count_C, count_G, count_T = count_nt(dna)
     print(count_A, count_C, count_G, count_T)
